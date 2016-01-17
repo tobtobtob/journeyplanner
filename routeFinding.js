@@ -1,5 +1,7 @@
 
-function findRoute(){
+// a dummy function for developing the UI 
+
+function findRoute(fromStop, toStop, time){
   //route is an array of trips
   var route = [];
   
