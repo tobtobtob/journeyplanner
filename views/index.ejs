@@ -8,7 +8,7 @@
     <div class="page-header">
       <h1>Journey Planner</h1>
     </div>
-    <form>
+    <form ng-submit="addRoutes()">
       <div class="origin">
         <input type="text" placeholder="Origin"></input>
       </div>
@@ -25,7 +25,11 @@
           <input type="radio" name="time" value="arrival">Arrival time</input>
         </form>
       </div>
-      <button type="Submit">Search</button>
+      <button type="submit">Search</button>
     </form>
+    
+    <div ng-repeat="route in routes">
+      {{route.type}} {{route.stop1}}
+    </div>
   </body>
 </html>
